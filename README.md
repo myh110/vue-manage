@@ -1,5 +1,5 @@
 
-# jl-mis(接龙后台管理系统)
+# jl-mis(后台管理系统)
 
 
 项目是基于vue-cli 3+ 构建的,请先将vue-cli升级到3+版本,vue-cli3 传送门(https://cli.vuejs.org/zh/)。
