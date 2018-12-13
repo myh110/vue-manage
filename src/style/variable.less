@@ -1,0 +1,100 @@
+/*------------------
+     Variable
+-------------------*/
+// @description:  变量类, 统一管理通用的颜色, 字号, 间距;
+
+// 模块间的标准间距
+// --------------------------------------------------
+@outside-col-gap:         15px;             // 外列间距
+@outside-row-gap:         15px;             // 外行间距
+@inside-col-gap:          10px;             // 内列间距
+@inside-row-gap:          10px;             // 内行间距
+
+// Color
+// --------------------------------------------------
+// 规定主体色, 通过darken和lighten来控制颜色变化;
+@main-color:              @color-blue-normal;
+
+// 其他通用颜色
+@color-darker:            #3F3A39;
+@color-dark:              #4A4A4A;
+@color-light:             #9B9B9B;
+@color-blue:              #049FF1;
+@color-orange:            #FF7F20;
+@color-red:               #F96E6E;
+@color-gray:              #F1F1F1;
+@color-white:             #FFF;
+@color-blue-darke:        #313131;
+@color-green:             #5FBEAA;
+@color-border:            #E2E2E2;
+@color-text:              #666;
+@color-link:              @main-color;//#55B1F2;
+@color-hover-link:        darken(@main-color, 15%);
+
+// 蓝色系----过渡主题色
+@color-blue-lighter:      #78A7FF;
+@color-blue-light:        #4778C7;
+@color-blue-normal:       #587ED1;
+@color-blue-dark:         #2B3953;
+@color-blue-darker:       #3D444A;
+
+// Background
+// --------------------------------------------------
+@body-bg:                 #FFF;//#FAFAFA;
+
+// Font
+// --------------------------------------------------
+@font-size-base:          14px;
+@font-family-base:        "Hiragino Sans GB","tahoma", "arial", "宋体", "sans-serif";
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+@border-radius-base:      2px;
+
+//** Width of the `border` for generating carets that indicator dropdowns.
+@caret-width-base:        4px;
+
+//-- Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//
+// Note: These variables are not generated into the Customizer.
+@zindex-dropdown:          1000;
+@zindex-tooltip:           1070;
+//** Global color for active items (e.g., navs or dropdowns).
+@component-active-color:   #fff;
+//** Global background color for active items (e.g., navs or dropdowns).
+@component-active-bg:      @color-blue;
+
+
+
+// theme override
+//
+//
+@element: "variable";
+
+
+//== Tooltips
+//
+//##
+
+//** Tooltip max width
+@tooltip-max-width:           200px;
+//** Tooltip text color
+@tooltip-color:               #fff;
+//** Tooltip background color
+@tooltip-bg:                  #000;
+@tooltip-opacity:             .9;
+
+//** Tooltip arrow width
+@tooltip-arrow-width:         5px;
+//** Tooltip arrow color
+@tooltip-arrow-color:         @tooltip-bg;
+
+
+// header
+@header-height:               45px;

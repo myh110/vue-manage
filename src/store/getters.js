@@ -1,0 +1,1 @@
+export const couter = state => state.singer
